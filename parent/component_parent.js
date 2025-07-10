@@ -7,4 +7,4 @@ window.addEventListener("message", (event) => {
     messageOutput.textContent = JSON.stringify(payload, null, 2);
     console.log("Parent received message:", payload);
   }
-});
+},{ once: true });
